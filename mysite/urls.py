@@ -1,0 +1,33 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('login/', views.login, name='login'),
+    path('register/', views.register, name='register'),
+    path('home/', views.home, name='home'),
+    path('dormitory/', views.dormitory_information, name='dormitory'),
+    path('dormitory2/', views.dormitory2, name='dormitory2'),
+    path('dormitory3/', views.dormitory3, name='dormitory3'),
+    path('water_rate/', views.water_rate, name='water_rate'),
+    path('water_rate2/', views.water_rate2, name='water_rate2'),
+    path('water_rate3/', views.water_rate3, name='water_rate3'),
+    path('electric_rate/', views.electric_rate, name='electric_rate'),
+    path('electric_rate2/', views.electric_rate2, name='electric_rate2'),
+    path('electric_rate3/', views.electric_rate3, name='electric_rate3'),
+    path('repair/',views.repair,name='repair'),
+    path('repair2/', views.repair2, name='repair2'),
+    path('tuition/', views.tuition, name='tuition'),
+    path('tuition2/', views.tuition2, name='tuition2'),
+    path('personal/', views.personal, name='personal'),
+    path('personal2/', views.personal2, name='personal2'),
+    path('change_face/', views.change_face, name='change_face'),
+    path('change_face1/', views.change_face1, name='change_face1'),
+    path('record/', views.record, name='record'),
+    path('recognition/', views.recognition, name='recognition'),
+    path('send/', views.send_checkCode, name='send'),
+    path('modify_phone/', views.modify_phone, name='modify_phone'),
+    path('forget_password/', views.forget_password, name='forget_password'),
+    path('modify_pwd/', views.modify_pwd, name='modify_pwd'),
+    path('avatar/', views.avatar, name='avatar'),
+    path('avatar1/', views.avatar1, name='avatar1'),
+]
